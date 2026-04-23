@@ -3,6 +3,8 @@
     { "name": "Oriam",      "slug": "oriam" },
     { "name": "Edinburgh",  "slug": "edinburgh" },
     { "name": "Holyrood",   "slug": "holyrood" },
-    { "name": "Portobello", "slug": "portobello" }
+    { "name": "Portobello", "slug": "portobello" },
+    { "name": "Vogrie", "slug": "vogrie" },
+    { "name": "Meadowmill", "slug": "meadowmill" }
   ]
 }
