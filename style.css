@@ -58,6 +58,109 @@ footer {
   color: var(--muted);
 }
 
+/* ── Tabs ──────────────────────────────────────────── */
+
+.tabs {
+  background: var(--green-dark);
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.35rem 1.1rem;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.tab-btn:hover {
+  border-color: rgba(255,255,255,0.8);
+  color: #fff;
+}
+
+.tab-btn.active {
+  background: #fff;
+  border-color: #fff;
+  color: var(--green-dark);
+}
+
+/* ── By-date cards ─────────────────────────────────── */
+
+.date-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: var(--gap);
+  overflow: hidden;
+}
+
+.date-card--highlight {
+  border-color: var(--green);
+  box-shadow: 0 0 0 2px var(--green-light);
+}
+
+.date-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--green-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.date-card--highlight .date-card-header {
+  background: var(--green);
+}
+
+.date-card-label {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+}
+
+.date-card--highlight .date-card-label {
+  color: #fff;
+}
+
+.this-week-badge {
+  background: #fff;
+  border-radius: 10px;
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 0.15rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.event-row {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.event-row:last-child {
+  border-bottom: none;
+}
+
+.event-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.event-row-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 /* ── Event cards ───────────────────────────────────── */
 
 .event-card {
