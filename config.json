@@ -1,0 +1,8 @@
+{
+  "events": [
+    { "name": "Oriam",      "slug": "oriam" },
+    { "name": "Edinburgh",  "slug": "edinburgh" },
+    { "name": "Holyrood",   "slug": "holyrood" },
+    { "name": "Portobello", "slug": "portobello" }
+  ]
+}

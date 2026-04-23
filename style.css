@@ -1,0 +1,195 @@
+:root {
+  --green: #00a550;
+  --green-dark: #007a3d;
+  --green-light: #e6f7ee;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #ddd;
+  --radius: 8px;
+  --gap: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--green);
+  color: #fff;
+  padding: 1.5rem 1rem 1.25rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+header .subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  opacity: 0.88;
+}
+
+main {
+  flex: 1;
+  max-width: 760px;
+  width: 100%;
+  margin: var(--gap) auto;
+  padding: 0 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Event cards ───────────────────────────────────── */
+
+.event-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: var(--gap);
+  overflow: hidden;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: var(--green-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.event-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+}
+
+.event-link {
+  font-size: 0.8rem;
+  color: var(--green-dark);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.event-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ── Date rows ─────────────────────────────────────── */
+
+.date-row {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.date-row:last-child {
+  border-bottom: none;
+}
+
+.date-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.date-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.event-num {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.fill-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fill-bar {
+  flex: 1;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.fill-bar-inner {
+  height: 100%;
+  background: var(--green);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.fill-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.roles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.role-tag {
+  background: #fff3e0;
+  border: 1px solid #f5a623;
+  color: #7a4e00;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ── Empty / error states ──────────────────────────── */
+
+.no-vacancies {
+  padding: 0.75rem 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.error-badge {
+  padding: 0.75rem 1rem;
+  color: #b00;
+  font-size: 0.85rem;
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+  padding: 3rem 0;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--muted);
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+}
